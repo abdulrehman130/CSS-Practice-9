@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(17, 17, 17);
+}
+.frem{
+    width: 16rem;
+    height: 16rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.frem .rotat{
+    width: 30rem;
+    height: 15rem;
+    background: #00ff88;
+    position: absolute;
+    animation: rotats 3s infinite ease-in-out;
+    
+}
+.frem .cant{
+    width: 251px;
+    height: 251px;
+    background: rgb(17, 17, 17);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frem .cant .area{
+    width: 205px;
+    height: 205px;
+    background: rgb(17, 17, 17);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+    
+}
+.frem .cant .area img{
+    width: 125px;
+}
+@keyframes rotats {
+    100%{
+        transform: rotate(-360deg);
+    }
+} 
